@@ -1,0 +1,11 @@
+<mat-nav-list class="timer-list" *ngIf="timeList.length > 0">
+  <mat-list-item *ngFor="let timeItem of timeList">
+    <a matLine href="#"> {{timeItem.hours + ':' + timeItem.minutes + ':' + timeItem.seconds}}</a>
+    <button mat-raised-button
+            color="warn"
+            class="btn-delete"
+            (click)="deleteCurrentTimeFromTimeList(timeItem)">
+      Delete
+    </button>
+  </mat-list-item>
+</mat-nav-list>

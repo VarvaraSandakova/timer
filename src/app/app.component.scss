@@ -1,0 +1,36 @@
+@mixin flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+.container {
+  @include flex-container;
+}
+
+.main-card {
+  @include flex-container;
+  flex-direction: column;
+  width: 278px;
+}
+
+.timer-card {
+  background-color: #000;
+  padding: 0;
+}
+
+.timer-list-card {
+  background-color: #262423;
+}
+
+.mat-card:not([class*=mat-elevation-z]) {
+  box-shadow: none;
+}
+
+
+
+
+
+
+

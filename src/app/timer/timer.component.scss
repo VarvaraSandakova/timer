@@ -1,0 +1,29 @@
+:host {
+  color: #fff;
+  width: 300px;
+}
+
+.timer-display {
+  color: #23BB3C;
+  text-align: center;
+}
+
+.mat-raised-button {
+  border-radius: 0px;
+}
+
+.btn-play {
+  width: 150px;
+  text-align: center;
+  border-bottom-left-radius: 4px;
+
+  .material-icons {
+    font-size: 20px;
+  }
+}
+
+.btn-reset {
+  border-bottom-right-radius: 4px;
+}
+
+

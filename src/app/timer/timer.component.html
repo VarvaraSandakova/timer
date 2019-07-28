@@ -1,0 +1,20 @@
+<div class="timer-display">
+  <h1>
+    {{time.hours ? time.hours : '00'}} :
+    {{(time.minutes) && (time.minutes <= 59) ? time.minutes : '00'}} :
+    {{(time.seconds) && (time.seconds <= 59) ? time.seconds : '00'}} <br/>
+  </h1>
+</div>
+
+<nav class="timer-nav">
+  <button mat-raised-button class="btn-play" (click)="executeTimer()">
+    <i class="material-icons"> {{this.executeButton === 'Play'? 'play_arrow':'pause'}}</i>
+    {{executeButton}}
+  </button>
+  <button mat-raised-button (click)="addCurrentTimeToList()">
+    <i class="material-icons">alarm</i>
+  </button>
+  <button mat-raised-button class="btn-reset" (click)="resetTimer()">
+    <i class="material-icons">delete_outline</i></button>
+</nav>
+
